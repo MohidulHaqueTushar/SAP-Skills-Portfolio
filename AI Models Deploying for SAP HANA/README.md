@@ -116,20 +116,21 @@ The goal of the regression model is to take the living area of a house (input va
 The data points in the plot represent **observations** from the dataset, and by minimizing the differences between the predicted and actual values, the model can make accurate predictions.
 
 ### Evaluating the Model: Mean Squared Error (MSE)
+![SLR](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/SimpleLinearRegression.JPG)
 
 Once the model is built, it’s important to measure how well it fits the data. This is done using the **Mean Squared Error (MSE)**, which calculates the average squared differences between predicted values (Ŷ) and actual values (Yi).
 
 The MSE formula is:
 
-\[
-MSE = \frac{1}{N} \sum_{i=1}^{N} (Yi - Ŷi)^2
-\]
+$$
+MSE = \frac{1}{N} \sum_{i=1}^{N} (Y_i - \hat{Y}_i)^2
+$$
 
 Where:
 - `N` is the number of data points,
-- `Yi` are the observed values,
-- `Ŷi` are the predicted values.
-![SLR](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/SimpleLinearRegression.JPG)
+- `Y_i` are the observed values,
+- `\hat{Y}_i` are the predicted values.
+
 
 ---
 
@@ -143,7 +144,8 @@ Where:
 A key distinction between **Classification** and **Regression**:
 - **Classification** deals with **discrete target variables** (e.g., spam or not-spam).
 - **Regression** deals with **continuous output variables** (e.g., predicting house prices).
-![class)[https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/Classification.JPG]
+
+![class](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/Classification.JPG)
 
 ---
 
@@ -161,7 +163,8 @@ The figure below illustrates the **United Kingdom's annual mean temperatures**, 
 According to the **Met Office blog** ([source](https://blog.metoffice.gov.uk/2023/07/14/how-have-daily-temperatures-shifted-in-the-uks-changing-climate/)), the latest 30-year meteorological averages (1991-2020) show almost a **1°C increase** in the UK's annual mean temperature compared to the previous period (1961-1990). 
 
 This data exemplifies how **time-series analysis** can uncover long-term trends, such as climate change.
-!(timeS)[https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/TimeSeries.JPG]
+
+![time](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/TimeSeries.JPG)
 
 ---
 
@@ -189,7 +192,8 @@ This data exemplifies how **time-series analysis** can uncover long-term trends,
 - **Hierarchical Forecasting**.
 
 For more details on available algorithms, refer to the **SAP HANA Predictive Analysis Library documentation**.
-!(al)[https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/AlgorithmsInSAP.JPG]
+
+![al](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/AlgorithmsInSAP.JPG)
 
 ---
 
@@ -210,11 +214,11 @@ Supervised learning involves using **labeled datasets**, meaning each data point
 
 ### Unsupervised Learning
 
-!(UL)[https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/UnsupervisedLearning.JPG]
+![UL](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/UnsupervisedLearning.JPG)
 
 Unsupervised learning works with **unlabeled data**. It aims to discover hidden patterns or groupings in the data without any guidance on the outcome. This method is used for:
 - **Clustering** (e.g., anomaly detection, big data visualization).
-!(ca)[https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/ClusterOutput.png]
+![ca](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/ClusterOutput.png)
 
 In supervised learning, the goal is to **map input data to known outcomes**, while in unsupervised learning, the algorithm **explores the intrinsic structure** of the data to find patterns.
 
@@ -225,14 +229,14 @@ Supervised learning models are trained on **labeled datasets**, where each insta
 - **Regression**: Predicting continuous values (e.g., house prices).
 
 ### Example: California Housing Dataset
-!(TD)[https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/SLTD.png]
+![TD](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/SLTD.png)
 
 A classic example is the **California Housing Dataset**, where the target variable is the **Median House Value**. Features like **median house age**, **average number of rooms per household**, and **average number of bedrooms per household** are used to predict the value of a house.
 
 - **Input Data**: Features like house age, number of rooms, etc.
 - **Target**: Median house value.
 
-!(TV)[https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/ExampleTD.png]
+![TV](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/ExampleTD.png)
 
 After training, the model can predict the **median house value** of a block group based on these input features.
 
@@ -253,7 +257,8 @@ These clusters are not predefined but emerge from the data, providing insights t
 ### Model Prediction
 
 After training, an unsupervised learning model can generate predictions or cluster new input data into similar groups. In this case, it may categorize a block group based on its similarity to other regions in the housing market.
-!(pre)[https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/ULprediction.png]
+![pre](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/ULprediction.png)
+
 ## Summary of Differences
 
 - **Supervised Learning**: Uses labeled data, typically applied in **classification** and **regression** tasks. It learns to map inputs to known outputs.
@@ -268,7 +273,7 @@ By identifying these patterns, unsupervised learning provides **valuable insight
 
 # Implementing a Machine Learning Workflow
 
-!(workflow)[https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/MLworkflow.JPG]
+![workflow](https://github.com/MohidulHaqueTushar/SAP-Skills-Portfolio/blob/main/AI%20Models%20Deploying%20for%20SAP%20HANA/Images/MLworkflow.JPG)
 
 ## Objective
 
